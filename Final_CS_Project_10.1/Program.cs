@@ -31,6 +31,22 @@ int choice = int.Parse(Console.ReadLine());
 switch (choice)
 {
 	case 1:
+		var product = new Product();
+		
+		Console.Write("Enter product name:");
+		product.name = Console.ReadLine();
+		
+		Console.Write("Enter product price:");
+		product.price = double.Parse(Console.ReadLine());
+		
+		Console.Write("Enter product quantity:");
+		product.quantity = int.Parse(Console.ReadLine());
+		
+		Console.Write("Enter product category:");
+		product.category = Console.ReadLine();
+		
+		Console.Write("Enter product expiration date:");
+		product.expirationDate = Console.ReadLine();
 		
 		break;
 	case 4:
