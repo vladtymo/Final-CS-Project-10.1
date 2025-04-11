@@ -13,6 +13,8 @@
    	Продаж товару(з видачею чеку)
 */
 
+using System.ComponentModel;
+
 Console.WriteLine("------------- Welcome to our Supermarket -------------");
 Console.WriteLine("\tMenu:");
 Console.WriteLine("1. Add Product");
@@ -23,4 +25,24 @@ Console.WriteLine("5. Find product");
 Console.WriteLine("6. Delete product");
 Console.WriteLine("7. Sell product");
 
+Console.Write("Your choice: ");
+int choice = int.Parse(Console.ReadLine());
 
+switch (choice)
+{
+	case 1:
+		
+		break;
+	case 4:
+		//...
+		break;
+}
+
+public class Product
+{
+	public string name;
+	public int quantity;
+	public double price;
+	public string category;
+	public string expirationDate;
+}
