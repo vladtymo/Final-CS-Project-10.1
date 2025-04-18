@@ -28,11 +28,11 @@ Console.WriteLine("7. Sell product");
 Console.Write("Your choice: ");
 int choice = int.Parse(Console.ReadLine());
 
+var product = new Product();
+
 switch (choice)
 {
 	case 1:
-		var product = new Product();
-		
 		Console.Write("Enter product name:");
 		product.name = Console.ReadLine();
 		
@@ -50,7 +50,12 @@ switch (choice)
 		
 		break;
 	case 4:
-		//...
+		Console.WriteLine("------ Product List --------");
+		Console.WriteLine($"Name: {product.name}");
+		Console.WriteLine($"Price: {product.price}");
+		Console.WriteLine($"Quantity: {product.quantity}");
+		Console.WriteLine($"Category: {product.category}");
+		Console.WriteLine($"Expiration: {product.expirationDate}");
 		break;
 }
 
